@@ -96,6 +96,10 @@ p {
 	color: var(--lightWildColor);
 }
 
+.disabled {
+	opacity: 40%;
+}
+
 .projects a {
 	color: var(--purple);
 }
