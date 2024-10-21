@@ -9,6 +9,7 @@ button.addEventListener("click", function () {
 	const userName = document.getElementById("firstname");
 	const bgColor = document.getElementsByClassName("description pink-bg");
 	const textColor = document.getElementsByClassName("pink-text");
+	const linkColor = document.querySelectorAll("a");
 
 	const chooseColor = prompt("Enter a color :");
 	const firstname = prompt("Enter your name :");
@@ -24,5 +25,9 @@ button.addEventListener("click", function () {
 	// iteration of textColor to apply style to each element of the HTML collection
 	for (let i = 0; i < textColor.length; i++) {
 		textColor[i].style.color = chooseColor;
+	}
+
+	for (let i = 0; i < linkColor.length; i++) {
+		linkColor[i].style.color = chooseColor;
 	}
 });
