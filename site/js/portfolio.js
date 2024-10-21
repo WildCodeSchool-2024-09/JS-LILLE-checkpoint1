@@ -32,6 +32,7 @@ button.addEventListener("click", function () {
 	}
 });
 
+// Change text of li element in front-end
 const columnButton = document.querySelector(".column-button");
 columnButton.addEventListener("click", function () {
 	const vsCode = document.getElementById("VScode");
@@ -40,4 +41,17 @@ columnButton.addEventListener("click", function () {
 	vsCode.textContent = "VScode";
 	github.textContent = "Github";
 	terminal.textContent = "Terminal";
+});
+
+// Add an element to the Dev tool list
+const devbutton = document.getElementById("devtools-button");
+const input = document.getElementById("devtools");
+const ul = document.querySelector(".skills-list");
+
+devbutton.addEventListener("click", function () {
+	const newLi = document.createElement("li");
+	newLi.classList.add("tool");
+	ul.appendChild(newLi);
+	newLi.textContent = input.value;
+	input.value = "";
 });
