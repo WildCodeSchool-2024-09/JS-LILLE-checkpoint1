@@ -11,6 +11,10 @@
 	--textAlign: center;
 }
 
+.banner-description {
+	padding: 0;
+}
+
 img {
 	max-width: 100%;
 }
@@ -109,8 +113,13 @@ p {
 	color: var(--purple);
 }
 
+/* Pour les ecran de plus de 700px */
 @media screen and (min-width: 700px) {
 	nav {
 		justify-content: space-between;
+	}
+
+	.banner {
+		text-align: center;
 	}
 }
