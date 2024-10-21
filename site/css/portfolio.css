@@ -131,18 +131,6 @@ p {
 	.column {
 		width: 50%;
 	}
-
-	.column:first-of-type {
-		border-radius: var(--radius);
-		border-bottom-right-radius: 0;
-		border-top-right-radius: 0;
-	}
-
-	.column:last-child {
-		border-radius: var(--radius);
-		border-top-left-radius: 0;
-		border-bottom-left-radius: 0;
-	}
 }
 
 /* Responsive pour les ecran de moins de 700px */
@@ -153,5 +141,10 @@ p {
 
 	.banner {
 		text-align: center;
+	}
+
+	.skills-container {
+		display: flex;
+		flex-direction: column-reverse;
 	}
 }
