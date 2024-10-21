@@ -31,3 +31,13 @@ button.addEventListener("click", function () {
 		linkColor[i].style.color = chooseColor;
 	}
 });
+
+const columnButton = document.querySelector(".column-button");
+columnButton.addEventListener("click", function () {
+	const vsCode = document.getElementById("VScode");
+	const github = document.getElementById("Github");
+	const terminal = document.getElementById("Terminal");
+	vsCode.textContent = "VScode";
+	github.textContent = "Github";
+	terminal.textContent = "Terminal";
+});
