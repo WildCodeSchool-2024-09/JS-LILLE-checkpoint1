@@ -107,6 +107,9 @@ p {
 .purple-text {
 	color: var(--purple);
 }
+.disabled {
+	opacity: 50%;
+}
 /* MOBILE */
 @media screen and (max-width: 700px) {
 	.desktop {
@@ -131,6 +134,11 @@ p {
 	.skills {
 		display: flex;
 		flex-direction: row-reverse;
+		justify-content: center;
+	}
+	.flexthebox {
+		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
 	}
 }
