@@ -117,7 +117,7 @@ p {
 	color: var(--purple);
 }
 
-/* Responsive pour les ecran de plus de 700px */
+/* Responsive for screen greater than 700px */
 @media screen and (min-width: 700px) {
 	nav {
 		justify-content: space-between;
@@ -138,7 +138,7 @@ p {
 	}
 }
 
-/* Responsive pour les ecran de moins de 700px */
+/* Responsive for screen smaller than 700px */
 @media screen and (max-width: 700px) {
 	.desktop {
 		display: none;
