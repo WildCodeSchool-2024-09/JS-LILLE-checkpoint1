@@ -5,9 +5,9 @@ Ex:
 thirdAngle(90, 30) doit retourner 60
 thirdAngle(20, 80) doit retourner 80
 */
-
+let totalAngle = 180
 function thirdAngle(a, b) {
-  // Your code here !
+  return ( totalAngle - (a + b));
 }
 
 module.exports = thirdAngle;
