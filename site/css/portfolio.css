@@ -51,6 +51,12 @@ p {
 	text-align: var(--textAlign);
 }
 
+#description-button {
+	background-color: rgb(240, 162, 175);
+	color: white;
+	padding: 1rem;
+}
+
 .pink-bg {
 	background-color: var(--lightWildColor);
 }
