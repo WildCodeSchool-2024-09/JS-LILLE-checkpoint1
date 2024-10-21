@@ -11,10 +11,40 @@
   --textAlign: center;
 }
 
-img {
-  max-width: 100%;
+@media screen and (max-width: 700px) {
+  header {
+    background-color: red;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .skills {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    column-width: 100%;
+  }
 }
 
+nav {
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  max-width: 20%;
+}
+h3 {
+  font-style: calc(var(--gutter) * 0.5);
+}
 h1 {
   font-size: calc(var(--gutter) * 1.5);
 }
@@ -32,6 +62,17 @@ p {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.column {
+  width: 50%;
 }
 
 .description {
@@ -67,7 +108,7 @@ p {
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
   background-color: var(--cardColor);
-  padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 2.1875);
+  padding: calc(var(--gutter) * 3.75) calc(var(--gutter) * 2.1875);
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
@@ -107,4 +148,25 @@ p {
 
 .purple-text {
   color: var(--purple);
-}
+
+  /* .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .box1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .box2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .box3 {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .box4 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+} */
