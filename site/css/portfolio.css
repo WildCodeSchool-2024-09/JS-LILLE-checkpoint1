@@ -52,9 +52,9 @@ p {
 }
 
 #description-button {
-	background-color: rgb(240, 162, 175);
+	border: solid 1px white;
 	color: white;
-	padding: 1rem;
+	padding: 0.5rem;
 }
 
 .pink-bg {
