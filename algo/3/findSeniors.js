@@ -26,7 +26,10 @@ const persons = [
 */
 
 function findSeniors(persons) {
-  // Your code here !
+	// Your code here !
+	if (persons.experience >= 5) {
+		console.log();
+	}
 }
 
 module.exports = findSeniors;
